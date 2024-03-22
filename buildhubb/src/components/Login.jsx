@@ -9,10 +9,10 @@ const Login = () => {
 
   return (
     <>
-    <div className='container border relative p-2 max-w-xl ml-2 mt-10 md:ml-80'>
+    <div className='container border relative m-auto w-screen p-2 max-w-xl md:ml-80 md:w-full mt-8'>
     <div className='p-4'>
         <h2 className='text-left text-xl font-semibold'>Log in to your Account</h2>
-        <h6 className='text-sm text-left'>Welcome back!, Log in to your account with</h6>
+        <h6 className='text-sm text-left md:text-base'>Welcome back!, Log in to your account with</h6>
         <hr className='mt-2 mb-2'></hr>
         <div className='links flex mt-4 items-center justify-between'>
         <a href='' className=' border border-black rounded px-6 py-1 md:py-2'> <FaGoogle className='text-md md:text-lg'/> </a>
@@ -55,7 +55,7 @@ const Login = () => {
                 <Link to='/forgetpassword' className='text-base font-semibold'>Forgot password?</Link>
             </span>
         </div>
-        <button className='bg-black text-white p-2 w-full border rounded-lg text-base'>
+        <button className='bg-deepBlue text-white p-2 w-full border rounded-lg text-base'>
             Log In
         </button>
       </form>

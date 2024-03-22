@@ -7,10 +7,15 @@ const ForgetPassword = () => {
     const [newEmail, setNewEmail] = useState('')
   return (
     <>
-    <div className='container border relative p-2 max-w-xl ml-2 mt-10 md:ml-80'>
-      <Link to='/login' className='font-semibold text-base ml-1'>
-        <FaArrowLeft className='text-lg ml-3 cursor-pointer' />
+    <div className='container border relative m-auto w-screen p-2 max-w-xl md:ml-80 md:w-full mt-4'>
+    <div className='flex relative items-center'>
+        <Link to='/login' className='font-semibold text-base ml-1'>
+        <FaArrowLeft className='text-lg ml-3 cursor-pointer'/>
         </Link>
+        <Link to='/login' className='font-semibold text-base ml-2 hidden md:block'>
+        Go back
+        </Link>
+        </div>
         <div className='p-4'>
             <h2 className='text-left text-xl font-semibold'>Forgot Password?</h2>
             <h6 className='text-sm text-left mb-1'>Relax! Let's see how we can get you another password</h6>
@@ -28,12 +33,12 @@ const ForgetPassword = () => {
             </input>
             <span></span>
         </div>
-        <button className='bg-black text-white p-2 w-full border rounded-lg text-base'>
+        <button className='bg-deepBlue text-white p-2 w-full border rounded-lg text-base'>
           <Link to='/verifypassword' className='font-semibold text-base ml-1'>Send Code</Link>
           </button>
             </form>
             <div className='mt-3 mb-12'>
-        <h3 className='text-base text-left'>Remember your password? <Link to='/login' className='font-semibold text-base ml-1'>Log in!</Link> </h3>
+        <h3 className='text-sm leading-4 font-semibold text-left'>Remember your password? <Link to='/login' className='font-semibold text-base ml-1'>Log in!</Link> </h3>
       </div>
         </div>
     </div>

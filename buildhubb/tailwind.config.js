@@ -13,11 +13,13 @@ export default {
     },
     extend: {
       colors: {
-        navyBlue: '#46575A'
+        navyBlue: '#46575A',
+        deepBlue: '#12362A',
+        lightGray: '#ADBC9F',
+        darkGray: '#D9D9D9'
       }
     }
   },
   plugins: [],
 }
-
 
